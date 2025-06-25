@@ -27,5 +27,8 @@ pnpm install # yarn|npm install
 `pnpm open`
 
 ### 生成组件/页面
-
-`pnpm g path/to/your/component`
+```shell
+pnpm g 组件名
+pnpm g 页面名 -p
+pnpm g 页面名 -p -n=自定义名称
+```
