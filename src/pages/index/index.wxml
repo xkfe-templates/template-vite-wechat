@@ -1,0 +1,9 @@
+<view class="min-h-screen">
+  首页
+  <text>{{ phone }}</text>
+  <view wx:for="{{ items }}" wx:key="index">
+    <text>{{ item.name }}</text>
+    <text>{{ item.age }}</text>
+    <text>{{ item.gender }}</text>
+  </view>
+</view>

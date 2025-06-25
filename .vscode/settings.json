@@ -1,0 +1,15 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "wxml": "html"
+  },
+  "editor.defaultFormatter": null,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "editor.tabSize": 2,
+  "[wxml]": {
+    "editor.defaultFormatter": "qiu8310.minapp-vscode"
+  },
+  "minapp-vscode.disableDecorate": false
+}
