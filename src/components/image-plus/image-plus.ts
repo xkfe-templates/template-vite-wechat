@@ -32,6 +32,7 @@ Component({
     useErrorSlot: Boolean,
     useLoadingSlot: Boolean,
     showMenuByLongpress: Boolean,
+    preview: Boolean
   },
 
   data: {
@@ -41,17 +42,13 @@ Component({
 
   methods: {
     onLoad(event: any) {
-      console.log('onload', event)
-
-      // this.setData({
-      //   loading: false,
-      // });
+      this.setData({
+        loading: false,
+      });
 
       this.triggerEvent('load', event.detail)
     },
     onError(event: any) {
-      console.log('onError', event)
-
       this.setData({
         loading: false,
         error: true,
@@ -63,6 +60,14 @@ Component({
     onClick(event: any) {
       this.triggerEvent('click', event.detail);
     },
+
+    onPewview() {
+      if (!this.properties.preview) return;
+      wx.previewImage({
+        current: this.properties.src,
+        urls: [this.properties.src],
+      })
+    }
   },
   options: {
     multipleSlots: true,

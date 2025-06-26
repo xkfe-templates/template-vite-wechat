@@ -1,5 +1,5 @@
 <view class="image-plus" style="width: {{width}}; height: {{height}};" bind:tap="onClick">
-  <image wx:if="{{ !error }}" src="{{src}}" mode="{{mode}}" lazy-load="{{ lazyLoad }}" webp="{{ webp }}" class="image__img {{round ? 'image-plus--round' : ''}}" bind:load="onLoad" bind:error="onError" />
+  <image wx:if="{{ !error }}" src="{{src}}" mode="{{mode}}" lazy-load="{{ lazyLoad }}" webp="{{ webp }}" class="image__img {{round ? 'image-plus--round' : ''}}" bind:load="onLoad" bind:error="onError" bind:tap="onPewview" />
   <view wx:if="{{ loading && showLoading }}" class="loading-class image-plus__loading">
     <slot wx:if="{{ useLoadingSlot }}" name="loading" />
     <image wx:else src="/images/loading-icon.svg" mode="scaleToFill" class="image-plus__loading-icon" />
