@@ -1,0 +1,3 @@
+<view class="count-to" style="font-size: {{fontSize}}; color: {{computedColor}};">
+  {{displayValue}}
+</view>

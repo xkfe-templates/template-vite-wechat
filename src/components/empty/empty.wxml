@@ -1,0 +1,7 @@
+<view class="empty-container">
+  <image wx:if="{{image}}" src="{{image}}" mode="aspectFit" class="empty-image" style="width: {{imageSize}}rpx; height: {{imageSize}}rpx;"></image>
+  <text class="empty-text" style="color: {{textColor}}; font-size: {{textSize}}rpx;">{{text}}</text>
+  <view wx:if="{{showButton}}" class="empty-button" bindtap="onButtonClick" style="background-color: {{buttonColor}}; color: {{buttonTextColor}}; font-size: {{buttonTextSize}}rpx;">
+    {{buttonText}}
+  </view>
+</view>

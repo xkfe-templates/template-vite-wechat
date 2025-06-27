@@ -4,6 +4,12 @@ import { defineConfig } from 'weapp-vite/config'
 export default defineConfig({
   weapp: {
     srcRoot: 'src',
+    // 自动导入组件
+    enhance: {
+      autoImportComponents: {
+        globs: ['components/**/*'],
+      },
+    },
     // pnpm g 生成的格式
     // https://vite.icebreaker.top/guide/generate.html
     generate: {

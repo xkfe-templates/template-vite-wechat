@@ -2,10 +2,10 @@
   <image wx:if="{{ !error }}" src="{{src}}" mode="{{mode}}" lazy-load="{{ lazyLoad }}" webp="{{ webp }}" class="image__img {{round ? 'image-plus--round' : ''}}" bind:load="onLoad" bind:error="onError" bind:tap="onPewview" />
   <view wx:if="{{ loading && showLoading }}" class="loading-class image-plus__loading">
     <slot wx:if="{{ useLoadingSlot }}" name="loading" />
-    <image wx:else src="/images/loading-icon.svg" mode="scaleToFill" class="image-plus__loading-icon" />
+    <image wx:else src="/images/icon-loading.svg" mode="scaleToFill" class="image-plus__loading-icon" />
   </view>
   <view wx:if="{{ error && showError }}" class="error-class image-plus__error">
     <slot wx:if="{{ useErrorSlot }}" name="error" />
-    <image wx:else src="/images/error-icon.svg" mode="scaleToFill" class="image-plus__error-icon" />
+    <image wx:else src="/images/icon-error.svg" mode="scaleToFill" class="image-plus__error-icon" />
   </view>
 </view>

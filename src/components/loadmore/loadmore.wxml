@@ -1,0 +1,12 @@
+<view class="loadmore">
+  <view wx:if="{{state === 'loading'}}" class="loadmore__loading">
+    <view class="loadmore__loading-icon"></view>
+    <text class="loadmore__text">{{loadingText}}</text>
+  </view>
+  <view wx:if="{{state === 'finished'}}" class="loadmore__finished">
+    <text class="loadmore__text">{{finishedText}}</text>
+  </view>
+  <view wx:if="{{state === 'error'}}" class="loadmore__error" bind:tap="handleReload">
+    <text class="loadmore__text">{{errorText}}</text>
+  </view>
+</view>
