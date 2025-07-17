@@ -4,14 +4,26 @@ export default defineAppJson({
   "$schema": "https://vite.icebreaker.top/app.json",
   pages: [
     'pages/index/index',
+    'pages/utils/utils',
     'pages/mine/mine',
   ],
-  subpackages: [],
+  subpackages: [
+    {
+      root: 'pages/example',
+      name: 'example',
+      pages: [
+        'image-plus/image-plus',
+        'count-to/count-to',
+        'loadmore/loadmore',
+        'empty/empty',
+      ]
+    }
+  ],
   preloadRule: {},
   window: {
-    navigationBarTextStyle: 'black',
     navigationBarTitleText: '小程序模板',
-    navigationBarBackgroundColor: '#ffffff',
+    navigationBarTextStyle: 'white',
+    navigationBarBackgroundColor: '#34B167',
   },
   style: 'v2',
   componentFramework: 'glass-easel',
@@ -20,20 +32,26 @@ export default defineAppJson({
   plugins: {},
   tabBar: {
     color: '#373737',
-    selectedColor: '#1758DE',
+    selectedColor: '#34B167',
     backgroundColor: '#ffffff',
     list: [
       {
         pagePath: 'pages/index/index',
         text: '首页',
-        iconPath: '',
-        selectedIconPath: '',
+        iconPath: "/images/tabbar/components.png",
+        selectedIconPath: "/images/tabbar/components-selected.png"
+      },
+      {
+        pagePath: 'pages/utils/utils',
+        text: 'utils',
+        iconPath: "/images/tabbar/fn.png",
+        selectedIconPath: "/images/tabbar/fn-selected.png"
       },
       {
         pagePath: 'pages/mine/mine',
         text: '我的',
-        iconPath: '',
-        selectedIconPath: '',
+        iconPath: "/images/tabbar/mine.png",
+        selectedIconPath: "/images/tabbar/mine-selected.png"
       },
 
     ],

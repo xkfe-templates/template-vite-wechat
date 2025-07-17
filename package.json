@@ -3,8 +3,9 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "原生微信小程序 基于weapp-vite + tailwindcss 快速开发模板",
+  "description": "原生的轻量化微信小程序模板， 基于weapp-vite构建，能够开箱即用的支持 ts / sass，还能使用众多 vite 插件，以及多个常用组件，助力快速开发。",
   "license": "MIT",
+  "author": "小凯同学 <xkfe16@gmail.com>",
   "keywords": [],
   "scripts": {
     "dev": "weapp-vite dev",
@@ -15,15 +16,9 @@
     "postinstall": "weapp-tw patch"
   },
   "devDependencies": {
-    "@egoist/tailwindcss-icons": "^1.9.0",
-    "@iconify-json/mdi": "^1.2.3",
-    "autoprefixer": "^10.4.21",
     "miniprogram-api-typings": "^4.0.7",
-    "postcss": "^8.5.6",
     "sass": "^1.89.2",
-    "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
-    "weapp-tailwindcss": "latest",
     "weapp-vite": "5.0.5"
   }
 }

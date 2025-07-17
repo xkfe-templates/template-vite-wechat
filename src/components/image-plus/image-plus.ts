@@ -25,8 +25,22 @@ Component({
       type: Boolean,
       value: true,
     },
-    width: String,        // 图片宽度
-    height: String,       // 图片高度
+    width: {
+      type: String,
+      value: '100%',
+    },        // 图片宽度
+    height: {
+      type: String,
+      value: '100%',
+    },       // 图片高度
+    loadingBg: {
+      type: String,
+      value: '#f7f8fa',
+    },
+    errorBg: {
+      type: String,
+      value: '#f7f8fa',
+    },
     round: Boolean,       // 是否圆形
     lazyLoad: Boolean,    // 是否懒加载
     useErrorSlot: Boolean,
@@ -41,14 +55,14 @@ Component({
   },
 
   methods: {
-    onLoad(event: any) {
+    onLoad(event: WechatMiniprogram.CustomEvent) {
       this.setData({
         loading: false,
       });
 
       this.triggerEvent('load', event.detail)
     },
-    onError(event: any) {
+    onError(event: WechatMiniprogram.CustomEvent) {
       this.setData({
         loading: false,
         error: true,
@@ -57,11 +71,11 @@ Component({
       this.triggerEvent('error', event.detail);
     },
 
-    onClick(event: any) {
+    onClick(event: WechatMiniprogram.CustomEvent) {
       this.triggerEvent('click', event.detail);
     },
 
-    onPewview() {
+    onPreview() {
       if (!this.properties.preview) return;
       wx.previewImage({
         current: this.properties.src,

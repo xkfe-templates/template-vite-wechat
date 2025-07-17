@@ -1,0 +1,28 @@
+<view class="page_image_plus">
+  <view class="demo_block">
+    <view class="demo_title">基础用法</view>
+    <view class="demo_content">
+      <image-plus src="/images/ipad.png" height="300rpx" />
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">成功/失败</view>
+    <view class="demo_content">
+      <image-plus src="https://img.yzcdn.cn/vant/ipad.png" />
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">圆形-round</view>
+    <image-plus src="https://img.yzcdn.cn/vant/ipad.png" />
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">自定义宽高-width/height</view>
+    <image-plus src="https://img.yzcdn.cn/vant/ipad.png" />
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">可预览-preview</view>
+    <view class="demo_content">
+      <image-plus src="https://pic35.photophoto.cn/20150511/0034034892281415_b.jpg" height="300rpx" preview />
+    </view>
+  </view>
+</view>

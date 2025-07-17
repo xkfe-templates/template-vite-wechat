@@ -36,14 +36,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f7f8fa;
     color: #969799;
   }
 
   &__loading-icon,
   &__error-icon {
-    width: 36%;
-    height: 36%;
+    width: 30%;
+    height: 30%;
     color: red;
   }
 

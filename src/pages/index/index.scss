@@ -1,0 +1,84 @@
+.index_page {
+  min-height: 100vh;
+  background-color: #F7F8F9;
+  padding: 16rpx;
+
+  .project_info {
+    padding: 40rpx 40rpx 30rpx;
+    border-radius: 16rpx;
+    backdrop-filter: blur(16rpx);
+    box-shadow: 0 12rpx 36rpx 0 rgba(0, 0, 0, 0.15);
+    border: solid 1rpx rgba(255, 255, 255, 0.5);
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 8rpx;
+    }
+
+    .project_name {
+      font-size: 36rpx;
+      font-weight: bold;
+      // 艺术
+      font-family: "PingFang SC";
+    }
+
+    .project_version {
+      font-size: 28rpx;
+      color: var(--primary-color);
+    }
+
+    .project_desc {
+      margin-top: 10rpx;
+      font-size: 28rpx;
+      color: #999;
+    }
+
+  }
+
+  .example_component {
+    margin-top: 20rpx;
+
+    .title {
+      padding: 20rpx 10rpx;
+      font-size: 28rpx;
+      color: #999;
+    }
+
+    .card {
+      border-radius: 16rpx;
+      background: linear-gradient(145deg, #f1f1f2, #ffffff);
+      box-shadow: 5px 5px 10px #f1f1f2,
+        -5px -5px 10px #ffffff;
+      border: solid 1rpx rgba(255, 255, 255, 0.5);
+      overflow: hidden;
+    }
+
+    .item {
+      padding: 30rpx 20rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 32rpx;
+      color: #323232;
+      transition: background-color 0.3s ease;
+    }
+
+    .item:not(:last-child) {
+      border-bottom: 1rpx solid #eee;
+    }
+
+    .item:active {
+      background-color: #f0f0f0;
+    }
+
+    .arrow_right {
+      width: 20rpx;
+      height: 20rpx;
+      border-top: 2rpx solid #323232;
+      border-right: 2rpx solid #323232;
+      transform: rotate(45deg);
+      font-weight: bold;
+    }
+  }
+}
