@@ -1,0 +1,26 @@
+.example {
+  .tip {
+    padding: 20rpx 30rpx;
+    font-size: 26rpx;
+    color: #f00;
+    font-weight: 500;
+    text-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
+  }
+
+  .demo_block {
+    margin-bottom: 30rpx;
+    background-color: #fff;
+
+  }
+
+  .demo_title {
+    padding: 20rpx 30rpx;
+    font-size: 26rpx;
+    color: #666;
+  }
+
+  .demo_content {
+    padding: 20rpx 0;
+    margin: 0 30rpx;
+  }
+}

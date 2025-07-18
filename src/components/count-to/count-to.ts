@@ -3,12 +3,12 @@ Component({
     // 字体大小
     fontSize: {
       type: String,
-      value: '32rpx'
+      value: 'inherit'
     },
     // 字体颜色
     color: {
       type: String,
-      value: ''
+      value: 'inherit'
     },
     // 颜色类型
     type: {
@@ -181,7 +181,7 @@ Component({
     // 计算颜色
     _computeColor() {
       const { color, type, typeColorMap } = this.data;
-      if (color) {
+      if (color !== 'inherit') {
         this.setData({ computedColor: color });
       } else {
         this.setData({ computedColor: typeColorMap[type] || typeColorMap.default });

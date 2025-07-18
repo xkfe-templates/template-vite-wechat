@@ -1,2 +1,29 @@
-<view>hello weapp-vite!</view>
-<view>from src/pages/example/empty/empty</view>
+<view class="example">
+  <view class="demo_block">
+    <view class="demo_title">基本用法</view>
+    <view class="demo_content">
+      <empty />
+    </view>
+  </view>
+
+  <view class="demo_block">
+    <view class="demo_title">自定义图片/大小-image/imageSize</view>
+    <view class="demo_content">
+      <empty image="https://pic.616pic.com/ys_img/00/06/02/1q7RlTAnCu.jpg" imageSize="300" />
+    </view>
+  </view>
+
+  <view class="demo_block">
+    <view class="demo_title">自定义描述-text/textColor/textSize</view>
+    <view class="demo_content">
+      <empty text="暂无数据~" textColor="#f00" textSize="32" />
+    </view>
+  </view>
+
+  <view class="demo_block">
+    <view class="demo_title">按钮-showButton/buttonText/buttonColor</view>
+    <view class="demo_content">
+      <empty showButton buttonText="重新加载" buttonColor="#1989fa" bind:click="handleClick" />
+    </view>
+  </view>
+</view>

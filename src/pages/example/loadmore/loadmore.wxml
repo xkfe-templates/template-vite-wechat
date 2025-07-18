@@ -1,2 +1,24 @@
-<view>hello weapp-vite!</view>
-<view>from src/pages/example/loadmore/loadmore</view>
+<view class="example">
+  <view class="demo_block">
+    <view class="demo_title">加载状态-state</view>
+    <view class="demo_content">
+      <loadmore state="loading" />
+      <loadmore state="finished" />
+      <loadmore state="error" />
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">自定义文案-loadingText/finishedText/errorText</view>
+    <view class="demo_content">
+      <loadmore state="loading" loadingText="在疯狂加载了..." />
+      <loadmore state="finished" finishedText="没有数据了哟" />
+      <loadmore state="error" errorText="失败了，点击重试吧~" />
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">点击重试-reload</view>
+    <view class="demo_content">
+      <loadmore state="{{ state }}" bind:reload="handleReload" />
+    </view>
+  </view>
+</view>

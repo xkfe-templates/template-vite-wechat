@@ -4,18 +4,14 @@
   vertical-align: top;
   overflow: hidden;
 
-  &--round {
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
   .image__img {
     width: 100%;
     height: 100%;
     border-radius: inherit;
   }
 
-  .image-round {
+  .image-plus--round {
+    overflow: hidden;
     border-radius: 50%;
   }
 

@@ -3,19 +3,25 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "原生的轻量化微信小程序模板， 基于weapp-vite构建，能够开箱即用的支持 ts / sass，还能使用众多 vite 插件，以及多个常用组件，助力快速开发。",
+  "description": "轻量化的原生微信小程序模板， 基于weapp-vite构建，能够开箱即用的支持 ts / sass，还能使用众多 vite 插件，以及多个常用组件，助力快速开发。",
   "license": "MIT",
   "author": "小凯同学 <xkfe16@gmail.com>",
-  "keywords": [],
+  "keywords": [
+    "微信小程序",
+    "weapp-vite",
+    "template"
+  ],
   "scripts": {
     "dev": "weapp-vite dev",
     "dev:open": "weapp-vite dev -o",
     "build": "weapp-vite build",
     "open": "weapp-vite open",
     "g": "weapp-vite generate",
-    "postinstall": "weapp-tw patch"
+    "postinstall": "weapp-tw patch",
+    "release": "pnpm build && bumpp"
   },
   "devDependencies": {
+    "bumpp": "^10.2.0",
     "miniprogram-api-typings": "^4.0.7",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",

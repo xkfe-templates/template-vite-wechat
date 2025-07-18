@@ -1,5 +1,6 @@
 Component({
   properties: {
+    // 加载状态：loading/finished/error
     state: {
       type: String,
       value: "loading"

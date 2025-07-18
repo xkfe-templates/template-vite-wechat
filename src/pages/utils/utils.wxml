@@ -1,2 +1,6 @@
-<view>hello weapp-vite!</view>
-<view>from src/pages/mine/mine</view>
+<view class="utils_page">
+  <view wx:for="{{utilsList}}" wx:key="name" class="card animation_scale" data-path="{{item.path}}" bind:tap="handleExamplePage">
+    <view class="card_title">{{item.name}}</view>
+    <!-- <view class="card_desc">{{item.desc}}</view> -->
+  </view>
+</view>

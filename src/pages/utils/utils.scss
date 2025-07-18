@@ -1,0 +1,20 @@
+.utils_page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10rpx 20rpx;
+
+  .card {
+    display: inline-block;
+    width: calc(50% - 40rpx);
+    background-color: #ffffff;
+    border-radius: 18rpx;
+    margin: 20rpx;
+    padding: 24rpx 20rpx;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+    text-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
+    color: #333333;
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+  }
+}

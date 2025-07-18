@@ -1,2 +1,36 @@
-<view>hello weapp-vite!</view>
-<view>from src/pages/example/count-to/count-to</view>
+<view class="example">
+  <view class="demo_block">
+    <view class="demo_title">基本用法</view>
+    <view class="demo_content">
+      <count-to start-val="0" end-val="2025" suffix="年" fontSize="60rpx"></count-to>
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">设置主题</view>
+    <view class="demo_content" style="font-size: 32rpx;">
+      <view>
+        <count-to start-val="0" end-val="1314" type="primary" separator=","></count-to>
+      </view>
+      <view>
+        <count-to start-val="0" end-val="1000000" type="error" separator=","></count-to>
+      </view>
+      <view>
+        <count-to start-val="0" end-val="1000000" type="warning" separator=","></count-to>
+      </view>
+      <view>
+        <count-to start-val="0" end-val="999" type="success" separator=","></count-to>
+      </view>
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">手动控制</view>
+    <view class="demo_content" style="font-size: 36rpx;">
+      <count-to autoplay="{{ false }}" start-val="{{ startVal }}" end-val="{{ endVal }}" separator="," prefix="￥" suffix="%" color="#1e9fff"></count-to>
+      <view class="demo_button">
+        <button type="primary" bindtap="start">开始</button>
+        <button type="primary" bindtap="stop">停止</button>
+        <button type="primary" bindtap="reset">重置</button>
+      </view>
+    </view>
+  </view>
+</view>

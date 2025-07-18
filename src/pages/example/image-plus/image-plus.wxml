@@ -1,23 +1,28 @@
-<view class="page_image_plus">
+<view class="example">
+  <view class="tip">可在模拟器 Network 中勾选 Disable cache 和选择Slow 3G查看加载效果</view>
   <view class="demo_block">
-    <view class="demo_title">基础用法</view>
+    <view class="demo_title">基本用法</view>
     <view class="demo_content">
       <image-plus src="/images/ipad.png" height="300rpx" />
     </view>
   </view>
   <view class="demo_block">
-    <view class="demo_title">成功/失败</view>
+    <view class="demo_title">加载失败</view>
     <view class="demo_content">
-      <image-plus src="https://img.yzcdn.cn/vant/ipad.png" />
+      <image-plus src="https://img.yzcdn.cn/vant/ipad.png" height="300rpx" />
     </view>
   </view>
   <view class="demo_block">
     <view class="demo_title">圆形-round</view>
-    <image-plus src="https://img.yzcdn.cn/vant/ipad.png" />
+    <view class="demo_content">
+      <image-plus src="https://pic35.photophoto.cn/20150511/0034034892281415_b.jpg" round width="300rpx" height="300rpx" />
+    </view>
   </view>
   <view class="demo_block">
     <view class="demo_title">自定义宽高-width/height</view>
-    <image-plus src="https://img.yzcdn.cn/vant/ipad.png" />
+    <view class="demo_content">
+      <image-plus src="https://pic35.photophoto.cn/20150511/0034034892281415_b.jpg" width="400rpx" height="200rpx" />
+    </view>
   </view>
   <view class="demo_block">
     <view class="demo_title">可预览-preview</view>
