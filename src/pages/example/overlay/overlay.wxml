@@ -1,0 +1,30 @@
+<view class="example">
+  <overlay show="{{ showOverlay }}">
+    <view wx:if="{{ isSlot }}" class="dialog">
+      <view>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit aspernatur corrupti voluptatum error illum, blanditiis quam dolorem sunt, maiores corporis amet. Eaque nostrum sunt corrupti id ea voluptates quos numquam.
+        Quod quos fugiat sequi tempore odio cupiditate sint sit, accusantium ipsum suscipit dignissimos. Reprehenderit dignissimos maxime natus optio consequatur, accusantium iure voluptatibus corporis harum veniam dolor expedita beatae necessitatibus voluptates?
+        Quod quidem provident aliquam laudantium atque aperiam nam exercitationem dolore impedit esse porro, eos numquam eligendi ad inventore quas, ab, perferendis nesciunt id cum nostrum unde dolor! Perferendis, soluta minima.
+        Culpa, quae ratione? Perferendis quo repudiandae officia nihil veniam rerum in nam ipsum dolores enim facere consequuntur, unde sint magni amet fugit vel! Aspernatur accusamus velit ea quo qui optio?
+        Aliquid quae maxime et tempora voluptas ipsum explicabo ullam ratione beatae. Provident vero commodi qui laborum repudiandae? Eum excepturi aspernatur voluptates perferendis consequuntur deleniti. Vero, consectetur. Maiores tempora eligendi odio.
+        Fugiat dolores rerum harum, maxime aspernatur ipsam amet nemo reprehenderit molestiae? Commodi animi voluptatem non qui aliquid sunt nihil, asperiores blanditiis consequatur possimus aliquam maiores, repellendus cum nesciunt culpa omnis!
+        Accusamus debitis iure voluptate repellat rerum, officia sapiente tempora aliquid neque veritatis unde aperiam incidunt aut nam omnis cupiditate, quae qui quisquam non molestiae sequi voluptatum atque. Consequuntur, minima voluptates?
+        Iusto in aut hic quidem natus iste, ea ipsa qui labore reprehenderit accusantium ut perspiciatis fugiat aliquid sint illo voluptatem. In incidunt doloribus nostrum odio blanditiis ea at veritatis dolore.
+        Eos laboriosam doloribus, reiciendis sequi libero accusantium iure eveniet at veniam deserunt illum, quis atque amet debitis, quod aut ducimus. Reprehenderit laborum ab debitis repudiandae exercitationem nam expedita animi architecto.
+        Architecto doloribus unde molestiae quibusdam facilis? Voluptate libero consequuntur velit sit saepe tenetur ipsa animi sequi officiis, explicabo laudantium quam incidunt qui quasi, vel repellendus. Nemo modi beatae debitis hic.
+      </view>
+    </view>
+  </overlay>
+  <view class="demo_block">
+    <view class="demo_title">基本用法</view>
+    <view class="demo_content">
+      <button type="primary" plain bind:tap="handleShowOverlay">显示遮罩层</button>
+    </view>
+  </view>
+  <view class="demo_block">
+    <view class="demo_title">嵌入内容</view>
+    <view class="demo_content">
+      <button type="primary" plain bind:tap="handleShowSlot">显示遮罩层</button>
+    </view>
+  </view>
+</view>

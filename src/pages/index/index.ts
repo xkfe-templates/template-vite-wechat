@@ -24,6 +24,14 @@ Page({
         name: 'empty空状态',
         path: '/pages/example/empty/empty'
       },
+      {
+        name: 'overlay 遮罩层',
+        path: '/pages/example/overlay/overlay'
+      },
+      {
+        name: 'popup 弹出层',
+        path: '/pages/example/popup/popup'
+      }
     ]
   },
   onLoad() {

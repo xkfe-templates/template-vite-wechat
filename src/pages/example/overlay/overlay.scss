@@ -1,0 +1,12 @@
+.dialog {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  overflow-y: auto;
+}

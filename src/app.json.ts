@@ -16,10 +16,13 @@ export default defineAppJson({
         'count-to/count-to',
         'loadmore/loadmore',
         'empty/empty',
+        'overlay/overlay',
+        'popup/popup',
       ]
     }
   ],
   preloadRule: {},
+  __usePrivacyCheck__: true,
   window: {
     navigationBarTitleText: '小程序模板',
     navigationBarTextStyle: 'white',

@@ -1,0 +1,3 @@
+<view class="overlay {{ className }}" style="background-color: {{ backgroundColor }}; z-index: {{ zIndex }}; {{ customStyle }}" catch:tap="onClick" wx:if="{{ show }}" catch:touchmove="{{ lockScroll ? 'noop' : ''}}">
+  <slot></slot>
+</view>
