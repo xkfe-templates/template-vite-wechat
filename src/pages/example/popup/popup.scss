@@ -1,3 +1,7 @@
+.example-popup {
+  height: 1600rpx;
+}
+
 .demo_content {
   display: flex;
   align-items: center;
@@ -21,7 +25,7 @@
 
 .popup-left .popup_content,
 .popup-right .popup_content {
-  height: 100vh;
+  height: 100%;
 }
 
 .popup-top .popup_content,

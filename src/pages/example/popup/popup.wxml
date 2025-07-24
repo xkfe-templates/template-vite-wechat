@@ -1,4 +1,4 @@
-<view class="example">
+<view class="example example-popup">
   <view class="tip">打开/关闭动画并不完美，待优化！！！</view>
   <popup show="{{ showPopupCenter }}" round closeable>
     <view class="popup_content">

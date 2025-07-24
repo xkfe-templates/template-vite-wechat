@@ -1,6 +1,6 @@
 <overlay wx:if="overlay" show="{{ show }}" z-index="{{ zIndex }}" custom-style="{{ overlayStyle }}" duration="{{ duration }}" closeOnClickOverlay="{{closeOnClickOverlay}}" bind:click="onClickOverlay" />
-<view wx:if="{{ show }}" class="popup popup-{{ position }} {{ roundClass }} {{ animateHide ? 'hide' : '' }} {{ safeAreaInsetTop && position === 'top' ? 'safe-area-inset-top' : '' }}" style="z-index: {{ zIndex + 1 }}; animation-duration: {{ duration }}ms; {{ customStyle }}" catch:touchmove="noop">
-  <view class="popup_wrapper {{ safeAreaInsetBottom && position === 'bottom' ? 'safe-area-inset-bottom' : '' }} ">
+<view wx:if="{{ show }}" class="popup popup-{{ position }} {{ roundClass }} {{ animateHide ? 'hide' : '' }}" style="z-index: {{ zIndex + 1 }}; animation-duration: {{ duration }}ms; {{ customStyle }}">
+  <view class="popup_wrapper {{ safeAreaInsetTop && position === 'top' ? 'safe-area-inset-top' : '' }} {{ safeAreaInsetBottom && position === 'bottom' ? 'safe-area-inset-bottom' : '' }} ">
     <slot></slot>
   </view>
   <view class="popup_close" style="z-index: {{ zIndex + 1 }};" catch:tap="hidePopup"></view>

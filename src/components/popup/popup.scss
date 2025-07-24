@@ -50,40 +50,16 @@
   animation-name: slideDown;
 }
 
-@keyframes slideDownReverse {
-  from {
-    opacity: 0;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(-100%);
-  }
-}
-
 .popup-top.hide {
   animation-name: slideDownReverse;
 }
 
 .popup-left {
   width: auto;
-  height: 100%;
+  height: 100vh;
   left: 0;
   top: 0;
   animation-name: slideLeft;
-}
-
-@keyframes slideLeftReverse {
-  from {
-    opacity: 0;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
 }
 
 .popup-left.hide {
@@ -98,20 +74,17 @@
   animation-name: slideRight;
 }
 
-@keyframes slideRightReverse {
-  from {
-    opacity: 0;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(100%);
-  }
-}
-
 .popup-right.hide {
   animation-name: slideRightReverse;
+}
+
+.popup-left .popup_wrapper,
+.popup-right .popup_wrapper {
+  height: 100%;
+  padding-bottom: constant(safe-area-inset-bottom);
+  /*兼容 IOS<11.2*/
+  padding-bottom: env(safe-area-inset-bottom);
+  box-sizing: border-box;
 }
 
 .popup-bottom {
@@ -121,17 +94,6 @@
   animation-name: slideUp;
 }
 
-@keyframes slideUpReverse {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-}
 
 .popup-bottom.hide {
   animation-name: slideUpReverse;
@@ -173,6 +135,18 @@
   }
 }
 
+@keyframes slideUpReverse {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -182,6 +156,18 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideDownReverse {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-100%);
   }
 }
 
@@ -197,6 +183,18 @@
   }
 }
 
+@keyframes slideLeftReverse {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+
 @keyframes slideRight {
   from {
     opacity: 0;
@@ -209,26 +207,17 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes slideRightReverse {
   from {
     opacity: 0;
+    transform: translateX(0);
   }
 
   to {
     opacity: 1;
+    transform: translateX(100%);
   }
 }
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
 
 @keyframes fadeInCenterScale {
   from {
