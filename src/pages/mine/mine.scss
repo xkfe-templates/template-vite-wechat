@@ -1,0 +1,77 @@
+.mine_page {
+  height: 100vh;
+
+  .user_wrapper {
+    position: relative;
+    padding: 20rpx;
+
+
+    .card {
+      position: relative;
+      z-index: 1;
+      padding: 40rpx 40rpx 32rpx;
+      background: #FFFFFF;
+      border-radius: 18rpx;
+      box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+
+
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 30rpx;
+
+        .avatar {
+          width: 120rpx;
+          height: 120rpx;
+          border-radius: 50%;
+        }
+
+        .nickname {
+          font-weight: bold;
+          font-size: 32rpx;
+          line-height: 68rpx;
+        }
+
+        .edit {
+          font-size: 26rpx;
+          color: #8E8E8E;
+          display: flex;
+          align-items: center;
+          gap: 10rpx;
+        }
+
+        .edit_icon {
+          width: 36rpx;
+          height: 36rpx;
+        }
+      }
+    }
+  }
+
+  .menu_list {
+    background: #FFFFFF;
+    border-radius: 18rpx;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+    padding: 0 28rpx;
+    margin: 24rpx 20rpx 0;
+
+    .menu_item {
+      width: 100%;
+      height: 100rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30rpx;
+
+      &:not(:last-child) {
+        border-bottom: 1rpx solid #E6E6E6;
+      }
+
+      .menu_item_icon {
+        width: 40rpx;
+        height: 40rpx;
+      }
+    }
+  }
+}

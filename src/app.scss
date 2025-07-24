@@ -25,6 +25,46 @@ image {
   animation: animation_scale 0.3s ease;
 }
 
-.highlight-text {
+.highlight_text {
   color: var(--primary-color);
+}
+
+.arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #8E8E8E;
+  border-right: 4rpx solid #8E8E8E;
+}
+
+.arrow_up {
+  transform: rotate(-45deg);
+}
+
+.arrow_down {
+  transform: rotate(135deg);
+}
+
+.arrow_left {
+  transform: rotate(225deg);
+}
+
+.arrow_right {
+  transform: rotate(45deg);
+  margin-right: 2rpx;
+}
+
+button.reset_button {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  font-size: initial;
+  font-weight: normal;
+  font-size: 28rpx;
+}
+
+button.reset_button::after {
+  border: none;
 }

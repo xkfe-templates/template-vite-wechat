@@ -39,33 +39,33 @@
     <view class="demo_title">基本用法</view>
     <view class="demo_content" bind:tap="handleShowPopup">
       <text>弹出框</text>
-      <view class="arrow_right"></view>
+      <view class="arrow arrow_right"></view>
     </view>
   </view>
   <view class="demo_block">
     <view class="demo_title">弹出位置</view>
     <view class="demo_content" data-position="left" bind:tap="handleShowPopupPosition">
       <text>左侧</text>
-      <view class="arrow_right"></view>
+      <view class="arrow arrow_right"></view>
     </view>
     <view class="demo_content" data-position="right" bind:tap="handleShowPopupPosition">
       <text>右侧</text>
-      <view class="arrow_right"></view>
+      <view class="arrow arrow_right"></view>
     </view>
     <view class="demo_content" data-position="top" bind:tap="handleShowPopupPosition">
       <text>顶部</text>
-      <view class="arrow_right"></view>
+      <view class="arrow arrow_right"></view>
     </view>
     <view class="demo_content" data-position="bottom" bind:tap="handleShowPopupPosition">
       <text>底部</text>
-      <view class="arrow_right"></view>
+      <view class="arrow arrow_right"></view>
     </view>
   </view>
   <view class="demo_block">
     <view class="demo_title">禁用遮罩</view>
     <view class="demo_content" bind:tap="handleDisableOverlay">
       <text>禁用遮罩关闭</text>
-      <view class="arrow_right"></view>
+      <view class="arrow arrow_right"></view>
     </view>
   </view>
 </view>

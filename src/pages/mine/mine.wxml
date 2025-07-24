@@ -1,2 +1,31 @@
-<view>hello weapp-vite!</view>
-<view>from src/pages/mine/mine</view>
+<view class="mine_page">
+  <view class="user_wrapper">
+    <view class="user_wrapper_bg"></view>
+    <view class="card">
+      <view class="info">
+        <view class="avatar">
+          <image src="{{imageHost}}/default_avatar.png" mode="widthFix" class="avatar" bind:error="handleAvatarError"></image>
+        </view>
+        <view class="info_content">
+          <view class="nickname">
+            <text>默认昵称</text>
+          </view>
+          <navigator class="edit animation_scale">
+            <image src="{{imageHost}}/icon-edit.png" mode="widthFix" class="edit_icon"></image>
+            <text>修改头像昵称</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="menu_list">
+    <button open-type="contact" class="reset_button menu_item" bind:tap="navigateToPrizeList">
+      <text class="menu_item_text">在线客服</text>
+      <view class="arrow arrow_right"></view>
+    </button>
+    <button open-type="feedback" class="reset_button menu_item" bind:tap="navigateToPrizeList">
+      <text class="menu_item_text">意见反馈</text>
+      <view class="arrow arrow_right"></view>
+    </button>
+  </view>
+</view>

@@ -1,3 +1,7 @@
+import app from '@/utils/getApp'
+
 Page({
-  data: {},
+  data: {
+    imageHost: app.globalData.imageHost,
+  },
 })
