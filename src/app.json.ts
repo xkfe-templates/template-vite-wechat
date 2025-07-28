@@ -19,6 +19,15 @@ export default defineAppJson({
         'overlay/overlay',
         'popup/popup',
       ]
+    },
+    {
+      root: 'pages/exam_utils',
+      name: 'exam_utils',
+      pages: [
+        'request/request',
+        'form-validate/form-validate',
+        'encrypt/encrypt',
+      ]
     }
   ],
   preloadRule: {},

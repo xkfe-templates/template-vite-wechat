@@ -1,0 +1,36 @@
+input {
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.input-placeholder {
+  color: #ccc;
+}
+
+.button_box {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80rpx;
+  gap: 20rpx;
+}
+
+.result_box {
+  margin-top: 20rpx;
+
+  .result_title {
+    color: #555;
+  }
+
+  .result_content {
+    font-weight: 500;
+    margin-bottom: 8rpx;
+    font-style: italic;
+  }
+}

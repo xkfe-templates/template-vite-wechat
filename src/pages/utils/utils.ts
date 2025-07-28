@@ -3,11 +3,11 @@ Page({
     utilsList: [
       {
         name: 'request网络请求',
-        path: '/pages/utils/request',
+        path: '/pages/exam_utils/request/request',
       },
       {
         name: '表单验证',
-        path: '/pages/utils/form',
+        path: '/pages/exam_utils/form-validate/form-validate',
       },
       {
         name: '微信隐私授权',
@@ -23,6 +23,10 @@ Page({
             },
           })
         },
+      },
+      {
+        name: '数据加密',
+        path: '/pages/exam_utils/encrypt/encrypt',
       },
     ],
   },

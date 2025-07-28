@@ -21,10 +21,15 @@
     "release": "pnpm build && bumpp"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "bumpp": "^10.2.0",
     "miniprogram-api-typings": "^4.0.7",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
     "weapp-vite": "5.0.5"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "mitt": "^3.0.1"
   }
 }
