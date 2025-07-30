@@ -25,6 +25,7 @@
     "bumpp": "^10.2.0",
     "miniprogram-api-typings": "^4.0.7",
     "sass": "^1.89.2",
+    "taze": "^19.1.0",
     "typescript": "^5.8.3",
     "weapp-vite": "5.0.5"
   },

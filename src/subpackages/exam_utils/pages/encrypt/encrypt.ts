@@ -1,4 +1,4 @@
-import { generateShortUUID, rsaEncrypt, rsaDecrypt, aesEncrypt, aesDecrypt, encryptInfo } from '@/utils/encrypt'
+import { generateShortUUID, rsaEncrypt, rsaDecrypt, aesEncrypt, aesDecrypt, encryptInfo } from '@/subpackages/exam_utils/utils/encrypt'
 
 Page({
   data: {

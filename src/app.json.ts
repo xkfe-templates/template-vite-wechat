@@ -9,24 +9,24 @@ export default defineAppJson({
   ],
   subpackages: [
     {
-      root: 'pages/example',
+      root: 'subpackages/example',
       name: 'example',
       pages: [
-        'image-plus/image-plus',
-        'count-to/count-to',
-        'loadmore/loadmore',
-        'empty/empty',
-        'overlay/overlay',
-        'popup/popup',
+        'pages/image-plus/image-plus',
+        'pages/count-to/count-to',
+        'pages/loadmore/loadmore',
+        'pages/empty/empty',
+        'pages/overlay/overlay',
+        'pages/popup/popup',
       ]
     },
     {
-      root: 'pages/exam_utils',
+      root: 'subpackages/exam_utils',
       name: 'exam_utils',
       pages: [
-        'request/request',
-        'form-validate/form-validate',
-        'encrypt/encrypt',
+        'pages/request/request',
+        'pages/form-validate/form-validate',
+        'pages/encrypt/encrypt',
       ]
     }
   ],

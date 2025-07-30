@@ -1,5 +1,5 @@
 
-import { JSEncrypt } from '@/lib/jsencrypt.min.js';
+import { JSEncrypt } from '@/subpackages/exam_utils/lib/jsencrypt.min.js';
 import CryptoJS from 'crypto-js';
 
 // ! 真实项目请将此信息写入配置文件

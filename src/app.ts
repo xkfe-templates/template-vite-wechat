@@ -1,4 +1,4 @@
-App<App.AppOption>({
+App<App.IAppOption>({
   globalData: {
     imageHost: '/images',
   },

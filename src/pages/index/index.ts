@@ -10,27 +10,27 @@ Page({
     exampleComponentList: [
       {
         name: 'image-plus图片懒加载',
-        path: '/pages/example/image-plus/image-plus'
+        path: '/subpackages/example/pages/image-plus/image-plus'
       },
       {
         name: 'count-to数字滚动',
-        path: '/pages/example/count-to/count-to'
+        path: '/subpackages/example/pages/count-to/count-to'
       },
       {
         name: 'loadmore加载更多',
-        path: '/pages/example/loadmore/loadmore'
+        path: '/subpackages/example/pages/loadmore/loadmore'
       },
       {
         name: 'empty空状态',
-        path: '/pages/example/empty/empty'
+        path: '/subpackages/example/pages/empty/empty'
       },
       {
         name: 'overlay 遮罩层',
-        path: '/pages/example/overlay/overlay'
+        path: '/subpackages/example/pages/overlay/overlay'
       },
       {
         name: 'popup 弹出层',
-        path: '/pages/example/popup/popup'
+        path: '/subpackages/example/pages/popup/popup'
       }
     ]
   },

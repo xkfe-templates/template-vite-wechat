@@ -1,5 +1,5 @@
 declare namespace App {
-  interface AppOption {
+  interface IAppOption {
     globalData: {
       /** 静态图片 HOST 地址 */
       imageHost: string
