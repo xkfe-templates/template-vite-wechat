@@ -10,7 +10,7 @@ Component({
     },
     zIndex: {
       type: Number,
-      value: 100
+      value: 10000
     },
     overlay: {
       type: Boolean,
