@@ -30,6 +30,11 @@ Page({
       },
     ],
   },
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 1 })
+    }
+  },
   handleExamplePage(e: WechatMiniprogram.TouchEvent) {
     const { path, index } = e.currentTarget.dataset
     const item = this.data.utilsList[index];

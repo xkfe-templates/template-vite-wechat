@@ -1,0 +1,8 @@
+<view class="tab-bar" hidden="{{hide}}">
+  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-is-sub-pages="{{item.isSubPages}}" data-path="{{item.pagePath}}" data-index="{{index}}" bind:tap="switchTab">
+    <image src="{{selected === index ? item.selectedIconPath : item.iconPath}}" class="icon" />
+    <view style="color: {{selected === index ? selectedColor : color}}" class="text">
+      {{item.text}}
+    </view>
+  </view>
+</view>

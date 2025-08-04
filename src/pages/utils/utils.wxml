@@ -1,4 +1,4 @@
-<view class="utils_page">
+<view class="utils_page custom-tab-bar-page">
   <view wx:for="{{utilsList}}" wx:key="name" class="card animation_scale" data-path="{{item.path}}" data-index="{{index}}" bind:tap="handleExamplePage">
     <view class="card_title">{{item.name}}</view>
   </view>

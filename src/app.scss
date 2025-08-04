@@ -22,6 +22,10 @@ image {
   height: 100%;
 }
 
+view.custom-tab-bar-page {
+  padding-bottom: calc(var(--custom-tab-bar-height) + env(safe-area-inset-bottom));
+}
+
 .animation_scale:active {
   animation: animation_scale 0.3s ease;
 }

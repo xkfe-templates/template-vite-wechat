@@ -30,6 +30,7 @@ Page({
       },
       {
         name: 'popup 弹出层',
+        showPopup: true,
         path: '/subpackages/example/pages/popup/popup'
       }
     ]
@@ -37,10 +38,18 @@ Page({
   onLoad() {
     console.log('imageHost', app.globalData.imageHost)
   },
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 0 })
+    }
+  },
   handleExamplePage(e: WechatMiniprogram.CustomEvent) {
     const { path } = e.currentTarget.dataset
     wx.navigateTo({
       url: path
     })
+  },
+  openPopup() {
+    console.log(11)
   }
 })

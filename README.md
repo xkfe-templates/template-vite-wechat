@@ -5,7 +5,7 @@
 
 ```shell
 # 临时方案，后续添加 cli 脚手架
-npx degit xkfe/template-vite-wechat 项目名称
+npx degit xkfe/template-weapp-vite 项目名称
 
 pnpm install # yarn|npm install
 ```

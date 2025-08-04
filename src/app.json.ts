@@ -1,4 +1,5 @@
 import { defineAppJson } from 'weapp-vite/json'
+import tabbar from './tabbar'
 
 export default defineAppJson({
   "$schema": "https://vite.icebreaker.top/app.json",
@@ -43,29 +44,7 @@ export default defineAppJson({
   lazyCodeLoading: 'requiredComponents',
   plugins: {},
   tabBar: {
-    color: '#373737',
-    selectedColor: '#34B167',
-    backgroundColor: '#ffffff',
-    list: [
-      {
-        pagePath: 'pages/index/index',
-        text: '首页',
-        iconPath: "/images/tabbar/components.png",
-        selectedIconPath: "/images/tabbar/components-selected.png"
-      },
-      {
-        pagePath: 'pages/utils/utils',
-        text: 'utils',
-        iconPath: "/images/tabbar/fn.png",
-        selectedIconPath: "/images/tabbar/fn-selected.png"
-      },
-      {
-        pagePath: 'pages/mine/mine',
-        text: '我的',
-        iconPath: "/images/tabbar/mine.png",
-        selectedIconPath: "/images/tabbar/mine-selected.png"
-      },
-
-    ],
+    custom: true,
+    ...tabbar
   },
 })

@@ -1,4 +1,4 @@
-<view class="index_page">
+<view class="index_page custom-tab-bar-page">
   <view class="project_info">
     <view class="row">
       <view class="project_name">{{projectName}}</view>
@@ -10,7 +10,12 @@
     <view class="title">通用组件示例</view>
     <view class="card">
       <view wx:for="{{exampleComponentList}}" wx:key="name" class="item" data-path="{{item.path}}" bind:tap="handleExamplePage">
-        <view class="example_component_item_name">{{item.name}}</view>
+        <view class="example_component_item_name">
+          <view>{{item.name}}</view>
+          <view wx:if="{{item.showPopup}}" class="sub_name" catch:tap="openPopup">
+            点击小字查看覆盖自定义tabar效果
+          </view>
+        </view>
         <view class="arrow arrow_right"></view>
       </view>
     </view>
