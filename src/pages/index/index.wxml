@@ -1,4 +1,9 @@
 <view class="index_page custom-tab-bar-page">
+  <popup show="{{ showPopup }}" round position="bottom">
+    <view class="popup_content" style="height: 30vh;">
+      <view class="popup_title">Hello Popup</view>
+    </view>
+  </popup>
   <view class="project_info">
     <view class="row">
       <view class="project_name">{{projectName}}</view>

@@ -33,7 +33,8 @@ Page({
         showPopup: true,
         path: '/subpackages/example/pages/popup/popup'
       }
-    ]
+    ],
+    showPopup: false
   },
   onLoad() {
     console.log('imageHost', app.globalData.imageHost)
@@ -50,6 +51,6 @@ Page({
     })
   },
   openPopup() {
-    console.log(11)
+    this.setData({ showPopup: true })
   }
 })

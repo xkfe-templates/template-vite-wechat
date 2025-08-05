@@ -3,6 +3,24 @@
   background-color: #F7F8F9;
   padding: 16rpx;
 
+  .popup_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup_title {
+    font-size: 84rpx;
+    font-weight: bold;
+    color: #CCC;
+    text-shadow: 1px 0px #009916, 1px 2px #006615, 3px 1px #009916,
+      2px 3px #006615, 4px 2px #009916, 4px 4px #006615,
+      5px 3px #009916, 5px 5px #006615, 7px 4px #009916,
+      6px 6px #006615, 8px 5px #009916, 7px 7px #006615,
+      9px 6px #009916, 9px 8px #006615, 11px 7px #009916
+      /*设置文字阴影*/
+  }
+
   .project_info {
     padding: 40rpx 40rpx 30rpx;
     border-radius: 16rpx;
