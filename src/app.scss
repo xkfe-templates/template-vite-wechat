@@ -22,8 +22,16 @@ image {
   height: 100%;
 }
 
-view.custom-tab-bar-page {
+/* 自定义tabbar 安全距离 */
+view.custom-tab-bar-padding {
   padding-bottom: calc(var(--custom-tab-bar-height) + env(safe-area-inset-bottom));
+}
+
+/* safe 安全距离 */
+.safe-bottom {
+  padding-bottom: constant(safe-area-inset-bottom) !important;
+  /*兼容 IOS<11.2*/
+  padding-bottom: env(safe-area-inset-bottom) !important;
 }
 
 .animation_scale:active {
@@ -31,7 +39,7 @@ view.custom-tab-bar-page {
 }
 
 .highlight_text {
-  color: var(--primary-color);
+  color: var(--color-primary);
 }
 
 .arrow {

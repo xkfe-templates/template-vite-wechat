@@ -1,5 +1,6 @@
 import tabbar from "@/tabbar";
 
+const deviceInfo = wx.getDeviceInfo()
 Component({
   data: {
     ...tabbar,
@@ -12,6 +13,11 @@ Component({
       if (isSubPages) {
         wx.navigateTo({ url: `/${path}` })
         return;
+      }
+      if (deviceInfo.platform !== "devtools") {
+        wx.vibrateShort({
+          type: 'medium'
+        })
       }
       await wx.switchTab({ url: `/${path}` })
       this.setData({

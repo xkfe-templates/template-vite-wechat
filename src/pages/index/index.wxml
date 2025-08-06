@@ -1,4 +1,4 @@
-<view class="index_page custom-tab-bar-page">
+<view class="index_page custom-tab-bar-padding">
   <popup show="{{ showPopup }}" round position="bottom">
     <view class="popup_content" style="height: 30vh;">
       <view class="popup_title">Hello Popup</view>
