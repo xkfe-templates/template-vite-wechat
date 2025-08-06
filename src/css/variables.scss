@@ -1,6 +1,60 @@
 page {
   /*全局通用的CSS变量 */
-  --primary-color: #34B167;
-  --text-color: #373737;
+  --color-primary: #34B167;
+  --color-primary-light: #41dc81;
+  --color-primary-lighter: #35ff92;
+  --color-primary-dark: #288d4f;
+  --color-primary-darker: #337d45;
+
+  /* 成功色 */
+  --color-success: #52c41a;
+  /* 警告色 */
+  --color-warning: #faad14;
+  /* 错误色 */
+  --color-error: #f5222d;
+  /* 信息色 */
+  --color-info: #909399;
+
+  /* 正文文本 */
+  --color-text: #373737;
+  /* 次要文本 */
+  --color-text-secondary: #666666;
+  /* 占位文本 */
+  --color-text-placeholder: #999999;
+  /* 禁用文本 */
+  --color-text-disabled: #c0c4cc;
+  /* 边框色 */
+  --color-border: #E1E1E1;
+
+  /* 字体样式 */
+  --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* 极小字号 */
+  --font-size-xs: 20rpx;
+  /* 小字号 */
+  --font-size-sm: 24rpx;
+  /* 基础字号 */
+  --font-size-base: 28rpx;
+  /* 大字号 */
+  --font-size-lg: 32rpx;
+  /* 超大字号 */
+  --font-size-xl: 36rpx;
+  /* 极大字号 */
+  --font-size-xxl: 40rpx;
+
+  /* 基础行高 */
+  --line-height-base: 1.5;
+  /* 紧凑行高 */
+  --line-height-sm: 1.3;
+  /* 宽松行高 */
+  --line-height-lg: 1.7;
+
+  /* 字重 */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* 自定义 tabbar 高度 */
   --custom-tab-bar-height: 96rpx;
 }

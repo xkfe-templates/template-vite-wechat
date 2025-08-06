@@ -20,7 +20,7 @@
 .empty-button {
   padding: 12rpx 40rpx;
   border-radius: 40rpx;
-  background-color: var(--primary-color, #07c160);
+  background-color: var(--color-primary, #07c160);
   color: white;
   font-size: 28rpx;
 }

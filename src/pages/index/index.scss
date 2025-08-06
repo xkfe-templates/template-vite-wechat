@@ -43,7 +43,8 @@
 
     .project_version {
       font-size: 28rpx;
-      color: var(--primary-color);
+      color: var(--color-primary);
+      font-weight: var(--font-weight-medium);
     }
 
     .project_desc {
@@ -94,7 +95,7 @@
       padding-top: 16rpx;
       font-size: 24rpx;
       font-weight: 500;
-      color: var(--primary-color);
+      color: var(--color-primary);
     }
   }
 }
