@@ -1,8 +1,8 @@
 <view class="example example-popup">
   <view class="tip">打开/关闭动画并不完美，待优化！！！</view>
   <popup show="{{ showPopupCenter }}" round closeable>
-    <view class="popup_content">
-      <text>
+    <scroll-view scroll-y="{{true}}" class="scroll-view">
+      <view class="popup_content">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ratione provident quia alias explicabo sunt laborum qui ducimus et accusamus. Numquam qui veritatis sint magni vitae quas nobis alias laudantium?
      Vitae perspiciatis, mollitia officiis quo minima sequi delectus nisi qui ratione possimus animi ea! Totam, voluptatibus ducimus consequuntur voluptatum illo inventore et tenetur, numquam, accusantium magni iste modi quasi rerum.
      Vel, unde nam. Assumenda, culpa, tempora voluptate officia mollitia eveniet architecto eos provident repellat nam ullam soluta iure ratione in quibusdam odit dolor dolore, aut perferendis cupiditate harum sit dolores!
@@ -13,15 +13,15 @@
      Quos, molestias quod voluptatem perferendis accusamus beatae nemo qui facere possimus voluptate excepturi inventore laborum vel quo necessitatibus repellendus dolor numquam. Maiores necessitatibus quis incidunt iste eveniet sapiente dignissimos suscipit!
      Nihil, laudantium nulla numquam adipisci vero quis eligendi tempore libero, quidem voluptatem beatae necessitatibus suscipit, nostrum ipsa. Vitae incidunt suscipit eligendi. Itaque dignissimos illum aut molestias quasi voluptatum at molestiae.
      Mollitia illum voluptatibus rerum facilis voluptate rem animi aperiam consequuntur amet laudantium dolor error soluta, autem ipsam totam, quasi doloribus odio eius consectetur neque beatae recusandae. Itaque magnam eligendi fugiat?
-      </text>
-    </view>
+      </view>
+    </scroll-view>
   </popup>
   <popup id="popup" show="{{ showPopup }}" position="{{ position }}" safeAreaInsetBottom="{{ safeAreaInsetBottom }}" closeOnClickOverlay="{{ closeOnClickOverlay }}">
-    <view class="popup_content">
-      <view wx:if="{{ !closeOnClickOverlay }}">
-        <button type="primary" size="mini" bind:tap="handleClosePopup">除居中位置外的关闭图标还未实现</button>
-      </view>
-      <text>
+    <scroll-view scroll-y="{{true}}" class="scroll-view">
+      <view class="popup_content">
+        <view wx:if="{{ !closeOnClickOverlay }}">
+          <button type="primary" size="mini" bind:tap="handleClosePopup">除居中位置外的关闭图标还未实现</button>
+        </view>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ratione provident quia alias explicabo sunt laborum qui ducimus et accusamus. Numquam qui veritatis sint magni vitae quas nobis alias laudantium?
      Vitae perspiciatis, mollitia officiis quo minima sequi delectus nisi qui ratione possimus animi ea! Totam, voluptatibus ducimus consequuntur voluptatum illo inventore et tenetur, numquam, accusantium magni iste modi quasi rerum.
      Vel, unde nam. Assumenda, culpa, tempora voluptate officia mollitia eveniet architecto eos provident repellat nam ullam soluta iure ratione in quibusdam odit dolor dolore, aut perferendis cupiditate harum sit dolores!
@@ -32,8 +32,8 @@
      Quos, molestias quod voluptatem perferendis accusamus beatae nemo qui facere possimus voluptate excepturi inventore laborum vel quo necessitatibus repellendus dolor numquam. Maiores necessitatibus quis incidunt iste eveniet sapiente dignissimos suscipit!
      Nihil, laudantium nulla numquam adipisci vero quis eligendi tempore libero, quidem voluptatem beatae necessitatibus suscipit, nostrum ipsa. Vitae incidunt suscipit eligendi. Itaque dignissimos illum aut molestias quasi voluptatum at molestiae.
      Mollitia illum voluptatibus rerum facilis voluptate rem animi aperiam consequuntur amet laudantium dolor error soluta, autem ipsam totam, quasi doloribus odio eius consectetur neque beatae recusandae. Itaque magnam eligendi fugiat?
-      </text>
-    </view>
+      </view>
+    </scroll-view>
   </popup>
   <view class="demo_block">
     <view class="demo_title">基本用法</view>

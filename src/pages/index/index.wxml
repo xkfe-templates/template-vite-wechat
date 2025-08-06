@@ -26,6 +26,16 @@
     </view>
   </view>
   <view class="example_component">
+    <view class="title plan_title">Plan List</view>
+    <view class="card plan_card" bind:tap="handlePlan">
+      <view wx:for="{{planList}}" wx:key="name" class="item">
+        <view class="example_component_item_name">
+          <view>{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="example_component">
     <view class="title">业务组件示例</view>
     <empty text="敬请期待"></empty>
   </view>

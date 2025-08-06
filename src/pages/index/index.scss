@@ -64,6 +64,10 @@
       color: #999;
     }
 
+    .plan_title {
+      color: var(--color-warning);
+    }
+
     .card {
       border-radius: 16rpx;
       background: linear-gradient(145deg, #f1f1f2, #ffffff);
@@ -71,6 +75,10 @@
         -5px -5px 10px #ffffff;
       border: solid 1rpx rgba(255, 255, 255, 0.5);
       overflow: hidden;
+    }
+
+    .plan_card {
+      box-shadow: none;
     }
 
     .item {

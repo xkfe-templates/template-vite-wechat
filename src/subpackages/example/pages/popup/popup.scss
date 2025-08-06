@@ -13,23 +13,29 @@
 }
 
 .popup_content {
-  width: 400rpx;
-  height: 400rpx;
   padding: 20rpx 30rpx;
   text-align: center;
   font-weight: bold;
   font-style: italic;
   background-color: #fff;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.popup-left .popup_content,
-.popup-right .popup_content {
-  height: 100%;
+.scroll-view {
+  width: 400rpx;
+  height: 400rpx;
+  overflow: hidden;
 }
 
-.popup-top .popup_content,
-.popup-bottom .popup_content {
+.popup-left .scroll-view,
+.popup-right .scroll-view {
+  height: 100vh;
+}
+
+.popup-top .scroll-view,
+.popup-bottom .scroll-view {
   width: 100vw;
 }
 
