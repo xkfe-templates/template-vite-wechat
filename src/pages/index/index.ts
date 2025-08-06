@@ -36,6 +36,7 @@ Page({
     ],
     showPopup: false
   },
+  onShareAppMessage() { },
   onLoad() {
     console.log('imageHost', app.globalData.imageHost)
   },
