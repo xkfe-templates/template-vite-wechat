@@ -1,2 +1,57 @@
-<view>hello weapp-vite!</view>
-<view>from src/pages/exam_utils/form-validate/form-validate</view>
+<view class="form_validate_page example">
+  <form catch:submit="formSubmit">
+    <view class="demo_block">
+      <view class="demo_title">validateForm示例</view>
+      <view class="demo_content">
+        <view class="form_item">
+          <view class="form_item_label required">
+            <label for="name">姓名</label>
+          </view>
+          <view class="form_item_content">
+            <input id="name" type="text" name="name" placeholder="请输入姓名" placeholder-style="color: #D4D8E1;" value="{{formData.name}}" data-field="name" bind:input="handleInput" />
+          </view>
+        </view>
+        <view class="form_item">
+          <view class="form_item_label required">
+            <label for="phone">手机号</label>
+          </view>
+          <view class="form_item_content">
+            <input id="phone" type="number" name="phone" placeholder="请输入手机号" placeholder-style="color: #D4D8E1;" value="{{formData.phone}}" data-field="phone" bind:input="handleInput" />
+          </view>
+        </view>
+        <view class="form_item">
+          <view class="form_item_label required">
+            <label for="email">邮箱</label>
+          </view>
+          <view class="form_item_content">
+            <input id="email" type="email" name="email" placeholder="请输入邮箱" placeholder-style="color: #D4D8E1;" value="{{formData.email}}" data-field="email" bind:input="handleInput" />
+          </view>
+        </view>
+        <view class="form_item">
+          <view class="form_item_label required">
+            <label for="password">密码</label>
+          </view>
+          <view class="form_item_content">
+            <input id="password" type="text" password name="password" placeholder="请输入密码" placeholder-style="color: #D4D8E1;" value="{{formData.password}}" data-field="password" bind:input="handleInput" />
+          </view>
+        </view>
+        <view class="form_item">
+          <view class="form_item_label required">
+            <label for="confirmPassword">确认密码</label>
+          </view>
+          <view class="form_item_content">
+            <input id="confirmPassword" type="text" password name="confirmPassword" placeholder="请输入确认密码" placeholder-style="color: #D4D8E1;" value="{{formData.confirmPassword}}" data-field="confirmPassword" bind:input="handleInput" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="footer-action safe-bottom">
+      <button form-type="reset" class="reset_button footer-action-btn footer-action-btn_save animation_scale">
+        <text>重置</text>
+      </button>
+      <button form-type="submit" class="reset_button footer-action-btn footer-action-btn_submit animation_scale">
+        <text>提交</text>
+      </button>
+    </view>
+  </form>
+</view>

@@ -1,13 +1,13 @@
 /**
  * 表单验证规则类型定义
  */
-export interface ValidationRule {
+export interface ValidationRule<T> {
   /** 是否必填 */
   required?: boolean;
   /** 错误提示信息 */
   message?: string;
   /** 自定义验证函数，返回 true 表示验证通过，返回 false 或字符串表示验证失败 */
-  validator?: (value: any) => boolean | string;
+  validator?: (value: any, form: T) => boolean | string;
 }
 
 /**
@@ -26,7 +26,7 @@ export interface ValidationResult {
  * 表单验证规则配置类型
  */
 export type ValidationRules<T> = {
-  [K in keyof T]?: ValidationRule | ValidationRule[];
+  [K in keyof T]?: ValidationRule<T> | ValidationRule<T>[];
 };
 
 /**
@@ -97,7 +97,7 @@ export const validateForm = <T extends Record<string, any>>(
 
       // 如果有值且存在验证器，则进行验证
       if (value && rule?.validator) {
-        const result = rule.validator(value);
+        const result = rule.validator(value, form);
         if (result !== true) {
           return {
             valid: false,
